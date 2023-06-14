@@ -2,7 +2,7 @@ import React from 'react'
 
 function HeroSection() {
   return (
-    <div>hello</div>
+    <div>hello World</div>
   )
 }
 
