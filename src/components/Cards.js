@@ -18,7 +18,7 @@ function Cards() {
                     />
                       <CardItem  
                     src='images/img-9.jpg'
-                    text='Project 1'
+                    text='Proectt2 '
                     label = 'Demo Project'
                     path='/projects'
                     />
