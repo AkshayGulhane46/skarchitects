@@ -22,6 +22,18 @@ function Cards() {
                     label = 'Demo Project'
                     path='/projects'
                     />
+                        <CardItem  
+                    src='images/img-9.jpg'
+                    text='Proectt2 '
+                    label = 'Demo Project'
+                    path='/projects'
+                    />
+                        <CardItem  
+                    src='images/img-9.jpg'
+                    text='Proectt2 '
+                    label = 'Demo Project'
+                    path='/projects'
+                    />
                 </ul>
             </div>
         </div>
