@@ -7,16 +7,20 @@ import Services from './components/Pages/Services';
 import Products from './components/Pages/Projects';
 import ContactUs from './components/Pages/ContactUs';
 
+
+
 function App() {
+
+
+
   return (
     <>
-   
       <Router>
         <Navbar/>
         <Routes>
           <Route path='/' exact Component={Home}/>
-          <Route path='/Services'  Component={Services}/>
-          <Route path='/Projects'  Component={Products}/>
+          <Route path='/services'  Component={Services}/>
+          <Route path='/projects'  Component={Products}/>
           <Route path='/contact-us'  Component={ContactUs}/>
         </Routes>
       </Router>

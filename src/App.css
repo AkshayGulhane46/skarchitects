@@ -8,7 +8,7 @@
   .home,
   .services,
   .products,
-  .sign-up {
+  .contactus {
     display: flex;
     height: 90vh;
     align-items: center;
@@ -21,24 +21,24 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #fff;
+    color: black;
     font-size: 100px;
   }
   
-  .products {
+  .projects {
 
     background-position: center;
     background-size: fill;
     background-repeat: no-repeat;
-    color: #fff;
+    color: black;
     font-size: 100px;
   }
   
-  .sign-up {
+  .contactus {
 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #fff;
+    color: black;
     font-size: 100px;
   }
