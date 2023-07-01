@@ -1,11 +1,5 @@
 import { useState } from 'react'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faCircleChevronLeft, 
-  faCircleChevronRight, 
-  faCircleXmark
-} from '@fortawesome/free-solid-svg-icons'
 
 import './wsp-gallery.css'
 
