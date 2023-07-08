@@ -15,7 +15,7 @@
     text-align: center;
   
     margin-bottom: 24px;
-    padding: 23px;
+    padding: 24px;
     color: #fff;
   }
   
@@ -42,7 +42,7 @@
     border: none;
     font-size: 18px;
     margin-bottom: 16px;
-    border: 1px solid #fff;
+    border: 1px solid #000000;
   }
   
   .footer-links {
@@ -136,6 +136,22 @@
     color: #fff;
     margin-bottom: 16px;
   }
+
+  .input-areas{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
   
   @media screen and (max-width: 820px) {
     .footer-links {
@@ -158,6 +174,38 @@
       flex-direction: column;
     }
   }
+
+  :root {
+    --primary : #fff
+}
+
+.submit-btn {
+    background-color: black ;
+    color: white;
+    padding: 8px 20px;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease-in-out;
+}
+
+.submit-btn:hover{
+  background-color: rgb(246, 243, 243) ;
+  color: rgb(0, 0, 0);
+
+  padding: 8px 20px;
+  border: 1px solid var(--primary);
+}
+
+.form-wrapper{
+  width: 90vw;
+  height: 90vh;
+  position: relative;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   
+  margin: auto;
+}
+
   @media screen and (max-width: 768px) {
   }

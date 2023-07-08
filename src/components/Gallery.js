@@ -61,7 +61,7 @@ const WSPGallery = ({galleryImages}) => {
                 key={index}
                 onClick={ () => handleOpenModal(index) }
               >
-                <img src={slide.img} alt='Image Template 2' />
+                <img src={slide.img} alt='Image Template' />
               </div>
             )
           })
@@ -71,5 +71,3 @@ const WSPGallery = ({galleryImages}) => {
     </div>
   )
 }
-
-export default WSPGallery
