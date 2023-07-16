@@ -11,7 +11,7 @@ function Cards() {
             <div className='cards__wrapper'>
                 <ul className='cards__items'>
                     <CardItem  
-                    src='images/img-9.jpg'
+                    src='images/building1.png'
                     text='Project 1'
                     label = 'Demo Project'
                     path='/projects'

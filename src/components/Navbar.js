@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
-  const [click, setClick] = useState(false);
+  const [click, setClick] = useState(true);
   const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
@@ -29,7 +29,8 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>SKARCHITECTS</Link>
+          <Link to='/' className='navbar-logo' onClick={closeMobileMenu} > SKARCHITECTD  </Link>
+       
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fa-circle-xmark'} />
    
