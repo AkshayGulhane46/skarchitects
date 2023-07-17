@@ -1,20 +1,64 @@
 import React from "react";
 import '../../App.css'
-import { Link } from "react-router-dom";
 import CardItem from "../CardItem";
-import '../Cards.css'
+import './Services.css'
 
-export default function Services(props){
-    return (
-        <>
+export default function Services(){
+    return(
 
-    <CardItem  
-        src='images/img-9.jpg'
-        text='Project 1'
-        label = 'Demo Project'
-        path='/projects'
-    />    
-    </>   
+        <div className="services--wrapper">
+
+        <CardItem  
+                src='images/img-9.jpg'
+                text='Architectural Design'    
+        />
+            <CardItem  
+                src='images/img-9.jpg'
+                text='Bathroom Design '
+             />
+            <CardItem  
+                src='images/img-9.jpg'
+                text='Building Design,'
+            />  
+            <CardItem  
+                src='images/img-9.jpg'
+                text='Custom Homes'
+             />
+            <CardItem  
+                src='images/img-9.jpg'
+                text='Dining Room Design'
+            />  
+            <CardItem  
+                src='images/img-9.jpg'
+                text='Implementation'
+             />
+            <CardItem  
+                src='images/img-9.jpg'
+                text='Support'
+            />  
+            <CardItem  
+                src='images/img-9.jpg'
+                text='Implementation'
+             />
+            <CardItem  
+                src='images/img-9.jpg'
+                text='Support'
+            />  
+            <CardItem  
+                src='images/img-9.jpg'
+                text='Implementation'
+             />
+            <CardItem  
+                src='images/img-9.jpg'
+                text='Support'
+            />  
+
+        </div>
+        
+
+
+
     )
+    
     
 }
