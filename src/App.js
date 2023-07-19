@@ -15,6 +15,9 @@ function App() {
 
   return (
     <>
+    <body>
+    <wc-toast/>
+    </body>
       <Router>
         <Navbar/>
         <Routes>
