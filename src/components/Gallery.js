@@ -1,11 +1,15 @@
-export const images = [
+export const farmhouse = [
     {
-        original:'images/building1.png',
-        thumbnail:'images/building1.png'
+        original:'images/farmhouse1.jpg',
+        thumbnail:'images/farmhouse1.jpg'
     },
     {
-        original:'images/building3.jpg',
-        thumbnail:'images/building3.jpg'
+        original:'images/farmhouse2.jpg',
+        thumbnail:'images/farmhouse2.jpg'
+    },
+    {
+        original:'images/cornerview.jpg',
+        thumbnail:'images/cornerview.jpg'
     },
 
 ]
