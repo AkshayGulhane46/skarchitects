@@ -17,7 +17,7 @@ export default function Projects(){
         showThumbnails = {false}
         infinite = {true}
         showPlayButton = {false}
-        showFullscreenButton = {fakse}
+        showFullscreenButton = {false}
       />
     </div>
 
