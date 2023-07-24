@@ -4,17 +4,21 @@
   flex-direction: column;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  font-family: 'Playfair Display', serif;
 }
+
 
 .project-details {
   scroll-snap-align: start;
   display: flex;
+  font-family: 'Playfair Display', serif;
 }
 
 /* Desktop-specific styles */
 @media (min-width: 1024px) {
   .project-details {
     flex-direction: row; /* Display image gallery and project details side by side on desktop */
+    font-style: 'Playfair Display', serif;
   }
 
   .image-gallery-wrapper {
