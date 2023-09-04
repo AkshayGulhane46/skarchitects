@@ -10,9 +10,6 @@ import ContactUs from './components/Pages/ContactUs';
 
 
 function App() {
-
-
-
   return (
     <>
     <body>
