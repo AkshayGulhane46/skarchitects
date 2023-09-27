@@ -19,7 +19,7 @@ function Footer() {
                     className='footer-input'/>
                     <input type='email' name='email' placeholder='Your Email' 
                     className='footer-input'/>
-                     <input type='text' name='requirement' placeholder='Your Requirement' 
+                     <input type='text' name='requirement' placeholder='Your Requirements' 
                     className='footer-input'/>
                     <Button className='btns'
                         buttonStyle='btn--outline'> Subsctbe </Button>
