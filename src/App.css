@@ -10,7 +10,7 @@
   .products,
   .contactus {
     display: flex;
-    height: 90vh;
+    height: 1000vh;
     align-items: center;
     justify-content: center;
     font-size: 3rem;
