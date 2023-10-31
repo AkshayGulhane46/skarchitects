@@ -21,7 +21,6 @@ function App() {
           <Route path='/' exact Component={Home}/>
           <Route path='/services'  Component={Services}/>
           <Route path='/projects'  Component={Products}/>
-          <Route path='/contact-us'  Component={ContactUs}/>
         </Routes>
       </Router>
     </>
