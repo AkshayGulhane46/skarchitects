@@ -20,6 +20,7 @@ function App() {
         <Header/>
         <Routes>
           <Route path='/' exact Component={Home}/>
+        
         </Routes>
       </Router>
     </>
