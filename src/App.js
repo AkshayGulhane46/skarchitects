@@ -1,11 +1,8 @@
 
 import './App.css';
-import Navbar from './components/Navbar';
 import { BrowserRouter as Router , Navigate , Route, Routes } from 'react-router-dom'
-import Home from './components/Pages/Home';
-import Services from './components/Pages/Services';
-import Products from './components/Pages/Projects';
-import ContactUs from './components/Pages/ContactUs';
+import Home from './Components/Home';
+import Header from './Components/Header';
 
 
 
@@ -13,15 +10,16 @@ function App() {
   return (
     <>
     <body>
+      
+
     <wc-toast/>
+    
     </body>
+    
       <Router>
-        <Navbar/>
+        <Header/>
         <Routes>
           <Route path='/' exact Component={Home}/>
-          <Route path='/services'  Component={Services}/>
-          <Route path='/projects'  Component={Products}/>
-          <Route path='/contact-us'  Component={ContactUs}/>
         </Routes>
       </Router>
     </>

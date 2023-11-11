@@ -1,0 +1,22 @@
+img{
+    height: 100vh;
+    width: 98vw;
+}
+
+h1{
+    font-size: 6rem;
+}
+
+.parallax {
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+  }
+  
+.top{
+  height: 100vh;
+}
+
+.middle{
+  height: 100vh;
+}
