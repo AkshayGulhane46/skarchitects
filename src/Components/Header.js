@@ -17,7 +17,7 @@ export const Header = () => {
       </div>
       <ul className={menuOpen ? "open" : ""}>
         <li>
-          <NavLink to="/aboutus">About</NavLink>
+          <NavLink to="/aboutus ">About</NavLink>
         </li>
         <li>
           <NavLink to="/services">Services</NavLink>
