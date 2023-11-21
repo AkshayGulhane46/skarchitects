@@ -10,14 +10,9 @@ function App() {
   return (
     <>
     <body>
-      
-
     <wc-toast/>
-    
     </body>
-    
       <Router>
-        <Header/>
         <Routes>
           <Route path='/' exact Component={Home}/>
         

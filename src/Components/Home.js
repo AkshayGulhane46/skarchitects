@@ -1,38 +1,54 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import "../Styles/Home.scss";
+import { useParallax } from "react-scroll-parallax";
 
 const Home = () => {
+  const [isFixed, setIsFixed] = useState(false);
+
   useEffect(() => {
-    const parallax = () => {
-      const scrollPosition = window.scrollY;
-      const parallaxElements = document.querySelectorAll('.parallax');
-      
-      parallaxElements.forEach(element => {
-        const speed = element.dataset.speed;
-        element.style.transform = `translateY(${scrollPosition * speed}px)`;
-      });
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const shouldBeFixed = scrollTop > 100; // Adjust the threshold as needed
+      setIsFixed(shouldBeFixed);
     };
 
-    window.addEventListener('scroll', parallax);
+    // Attach the scroll event listener
+    window.addEventListener('scroll', handleScroll);
 
+    // Clean up the event listener on component unmount
     return () => {
-      window.removeEventListener('scroll', parallax);
+      window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, []); // Empty dependency array to ensure the effect runs only once
+
+  const heroNameClassName = isFixed ? 'hero-name fixed' : 'hero-name';
 
   return (
     <>
-    <div className='top'>
-      <h1 className="parallax" data-speed="0.9">SK Architects</h1>
-      <img className="parallax" data-speed="0.3" src='./homeImage.png' alt="Home Image" />
-    </div>
-    <div className='middle'>
-      <h2>Projects</h2>
-      <img src='./homeImage.png' alt="Home Image" />
-
-    </div>
+      <div className='top'>
+        <div className={heroNameClassName}>
+          <h1>we are</h1>
+          <p>SK ARCHITECTS</p>
+          <img src='building1.png'></img>
+        </div>
+      </div>
+      <div className='middle'>
+        <div className='projects'>
+          <div className='project-1'>
+            <p> The Farmhouse </p>
+          </div>
+          <div className='project-2'>
+            <p> The Farmhouse 2 </p>
+          </div>
+          <div className='project-3'>
+            <p> The Farmhouse 3</p>
+          </div>
+        </div>
+      </div>
+      
     </>
   );
 };
 
 export default Home;
+

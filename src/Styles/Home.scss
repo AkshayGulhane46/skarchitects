@@ -1,22 +1,78 @@
-img{
-    height: 100vh;
-    width: 98vw;
-}
+  /* Media Query for Mobile Devices */ 
+@media (max-width: 480px) { 
+  .top{
+    border: 1px solid black;
+    margin: 10px;
+    margin-top: 40px;
+    padding: 10px;
+    height: 95vh;
 
-h1{
-    font-size: 6rem;
-}
-
-.parallax {
-    position: relative;
-    transform-style: preserve-3d;
-    will-change: transform;
   }
-  
-.top{
-  height: 100vh;
-}
+  .top p{
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;  // Set the desired text color
+  }
 
-.middle{
-  height: 100vh;
-}
+  .top img{
+    height: 75vh;
+    object-fit:cover;
+    width: 90vw;
+  }
+
+
+  .middle{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    height: auto;
+  .projects{
+    .project-1{
+      height: 95vh;
+      border: 1px solid black;
+       p{
+        font-size: 3rem
+      }
+    }
+    .project-2{
+      height: 95vh;
+      border: 1px solid black;
+       p{
+        font-size: 3rem
+      }
+    }
+    .project-3{
+      height: 95vh;
+      border: 1px solid black;
+       p{
+        font-size: 3rem
+      }
+    }
+  }
+  }
+
+} 
+  
+/* Media Query for low resolution  Tablets, Ipads */ 
+@media (min-width: 481px) and (max-width: 767px) { 
+   
+} 
+  
+/* Media Query for Tablets Ipads portrait mode */ 
+@media (min-width: 768px) and (max-width: 1024px){ 
+ 
+} 
+  
+/* Media Query for Laptops and Desktops */ 
+@media (min-width: 1025px) and (max-width: 1280px){ 
+   
+} 
+  
+/* Media Query for Large screens */ 
+@media (min-width: 1281px) { 
+  
+} 
