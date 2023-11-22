@@ -8,19 +8,31 @@
     height: 95vh;
 
   }
+  .top h1{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    transform: translate(-80%, -25%);
+    text-align: center;
+    color: #fff;  // Set the desired text color
+    font-size: 2rem;
+   
+}
   .top p{
       position: absolute;
       top: 20%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
+      left: 45%;
+      transform: translate(-50%, -25%);
+      text-align: left;
       color: #fff;  // Set the desired text color
+      font-size: 3rem;
+     
   }
 
   .top img{
     height: 75vh;
     object-fit:cover;
-    width: 80vw;
+    width: 90vw;
   }
 
 
