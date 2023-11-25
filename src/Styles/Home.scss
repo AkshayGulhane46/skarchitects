@@ -1,12 +1,15 @@
   /* Media Query for Mobile Devices */ 
 @media (max-width: 480px) { 
-  .top{
-    border: 1px solid black;
-    margin: 10px;
-    margin-top: 40px;
-    padding: 10px;
-    height: 95vh;
 
+  .top{
+    padding: 10px;
+    height: 80vh;
+   // background-color: #3e8bc5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#3985c2,#96bed5, #243355);
   }
   .top h1{
     position: absolute;
@@ -14,7 +17,7 @@
     left: 30%;
     transform: translate(-80%, -25%);
     text-align: center;
-    color: #fff;  // Set the desired text color
+    color: #cfa084;  // Set the desired text color
     font-size: 2rem;
    
 }
@@ -29,6 +32,7 @@
      
   }
 
+
   .top img{
     height: 75vh;
     object-fit:cover;
@@ -38,10 +42,12 @@
 
   .middle{
     border: 1px solid black;
-    margin: 10px;
     padding: 10px;
-    margin-top: 20px;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
   .projects{
     .project-1{
       height: 95vh;
