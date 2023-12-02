@@ -36,14 +36,18 @@ const Home = () => {
       </div>
       <div className='our-work'>
         <div className='heading'>
-          
+
         </div>
       </div>
       <div className='middle'>
         <div className='projects'>
           <div className='project-1'>
-            <p> The Farmhouse </p>
-           
+              <div className='project-name'>
+                <p> The Farmhouse </p>
+              </div> 
+              <div className='img-container'>
+                  <img src='farmhouse3.jpg'></img>
+              </div>
           </div>
           <div className='project-2'>
             <p> The Farmhouse 2 </p>
