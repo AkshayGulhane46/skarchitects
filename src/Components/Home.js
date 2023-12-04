@@ -3,36 +3,28 @@ import "../Styles/Home.scss";
 import { useParallax } from "react-scroll-parallax";
 
 const Home = () => {
-  const [isFixed, setIsFixed] = useState(false);
+  const [showInfo, setShowInfo] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      const shouldBeFixed = scrollTop > 100; // Adjust the threshold as needed
-      setIsFixed(shouldBeFixed);
-    };
+  const toggleProjectInfo = () => {
+    console.log("infor shows")
+    setShowInfo(!showInfo);
+}
 
-    // Attach the scroll event listener
-    window.addEventListener('scroll', handleScroll);
+const navigateToProjectDetails = () => {
+  // You can replace '/project-details' with the actual path to your project details page
+  
+};
 
-    // Clean up the event listener on component unmount
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []); // Empty dependency array to ensure the effect runs only once
-
-  const heroNameClassName = isFixed ? 'hero-name fixed' : 'hero-name';
 
   return (
     <>
       <div className='top'>
-        <div className={heroNameClassName}>
           <h1>we are</h1>
           <p>SK ARCHITECTS</p>
           <div className='img-container'>
               <img src='building1.png'></img>
           </div>
-        </div>
+  
       </div>
       <div className='our-work'>
         <div className='heading'>
@@ -41,7 +33,30 @@ const Home = () => {
       </div>
       <div className='middle'>
         <div className='projects'>
+        <div className={`project-1 ${showInfo ? 'show-info' : ''}`} onClick={toggleProjectInfo}>
+      <div className='project-name'>
+        <p> The Farmhouse </p>
+        <p className="project-info">Some information about the project</p>
+        {showInfo && (
+          <button className="more-info-button" onClick={navigateToProjectDetails}>
+            More Info
+          </button>
+        )}
+      </div>
+      <div className='img-container'>
+        <img src='farmhouse3.jpg' alt='Farmhouse Image' />
+      </div>
+    </div>
+
           <div className='project-1'>
+              <div className='project-name'>
+                <p> The House 1 </p>
+              </div> 
+              <div className='img-container'>
+                  <img src='building3.jpg'></img>
+              </div>
+          </div>
+           <div className='project-1'>
               <div className='project-name'>
                 <p> The Farmhouse </p>
               </div> 
@@ -49,12 +64,13 @@ const Home = () => {
                   <img src='farmhouse3.jpg'></img>
               </div>
           </div>
-          <div className='project-2'>
-            <p> The Farmhouse 2 </p>
-            
-          </div>
-          <div className='project-3'>
-            <p> The Farmhouse 3</p>
+           <div className='project-1'>
+              <div className='project-name'>
+                <p> The Farmhouse </p>
+              </div> 
+              <div className='img-container'>
+                  <img src='farmhouse3.jpg'></img>
+              </div>
           </div>
         </div>
       </div>

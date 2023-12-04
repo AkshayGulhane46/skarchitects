@@ -48,38 +48,53 @@
     justify-content: center;
 
   .projects{
-    .project-1{
+
+    .project-1 {
+      position: relative;
       padding: 10px;
       height: 80vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-image: url('/building1.png');
-
-      .img-container{
-        img{
-          height: 80vh;
-          object-fit:cover;
-          width: 90vw;
-          border-radius: 10px;
-        }
-      }
-
-      .project-name{
-        position: relative;
-        color: white;
-        z-index: 999;
-        
-        p{
-          color: #fff;  // Set the desired text color
-          font-size: 3rem;
-        }
-      }
-      
-
-      
+      cursor: pointer; /* Add pointer cursor to indicate clickable */
     }
+    
+    .project-1 .img-container img {
+      height: 80vh;
+      object-fit: cover;
+      width: 90vw;
+      border-radius: 10px;
+    }
+    
+    .project-1 .project-name {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: white;
+      z-index: 999;
+      text-align: center;
+    }
+    
+    .project-1 .project-name p {
+      color: #fff;
+      font-size: 3rem;
+    }
+    
+    .project-1 .project-name .project-info {
+      display: none; /* Initially hide the project info */
+      font-size: 1.5rem;
+      margin-top: 10px;
+      transition: opacity 0.5s; /* Add a smooth transition effect */
+    }
+    
+    .project-1.show-info .project-name .project-info {
+      display: block; /* Show the project info when the show-info class is present */
+    }
+    
+    
+  
+      
     .project-2{
       height: 95vh;
       border: 1px solid black;
