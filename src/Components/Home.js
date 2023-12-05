@@ -61,7 +61,7 @@ const navigateToProjectDetails = () => {
                 <p> The Farmhouse </p>
               </div> 
               <div className='img-container'>
-                  <img src='farmhouse3.jpg'></img>
+                <img src='building4.png'></img>
               </div>
           </div>
            <div className='project-1'>
@@ -69,10 +69,18 @@ const navigateToProjectDetails = () => {
                 <p> The Farmhouse </p>
               </div> 
               <div className='img-container'>
-                  <img src='farmhouse3.jpg'></img>
+                <img src='building5.png'></img>
               </div>
           </div>
         </div>
+        <div className='project-1'>
+              <div className='project-name'>
+                <p> The Farmhouse </p>
+              </div> 
+              <div className='img-container'>
+                <img src='building21.png'></img>
+              </div>
+          </div>
       </div>
       
     </>
