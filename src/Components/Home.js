@@ -47,15 +47,21 @@ const navigateToProjectDetails = () => {
         <img src='farmhouse3.jpg' alt='Farmhouse Image' />
       </div>
     </div>
+    <div className={`project-1 ${showInfo ? 'show-info' : ''}`} onClick={toggleProjectInfo}>
+      <div className='project-name'>
+        <p> The Farmhouse </p>
+        <p className="project-info">Some information about the project</p>
+        {showInfo && (
+          <button className="more-info-button" onClick={navigateToProjectDetails}>
+            More Info
+          </button>
+        )}
+      </div>
+      <div className='img-container'>
+        <img src='building3.jpg'></img>      
+        </div>
+    </div>
 
-          <div className='project-1'>
-              <div className='project-name'>
-                <p> The House 1 </p>
-              </div> 
-              <div className='img-container'>
-                  <img src='building3.jpg'></img>
-              </div>
-          </div>
            <div className='project-1'>
               <div className='project-name'>
                 <p> The Farmhouse </p>
