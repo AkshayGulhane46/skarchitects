@@ -50,7 +50,6 @@
   .projects{
 
     .project-1 {
-      margin-top: 15px;
       position: relative;
       padding: 10px;
       height: 80vh;
@@ -58,7 +57,17 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      margin-top: 15px;
       cursor: pointer; /* Add pointer cursor to indicate clickable */
+      transition: background-color 0.3s; /* Add transition for background-color */
+    }
+    
+    .project-1:hover {
+      filter: blur(8px); /* Apply a blur effect on hover */
+    }
+    
+    .project-1 .img-container {
+      position: relative;
     }
     
     .project-1 .img-container img {
@@ -66,6 +75,11 @@
       object-fit: cover;
       width: 90vw;
       border-radius: 10px;
+      transition: filter 0.5s; /* Add a smooth transition for the filter property */
+    }
+    
+    .project-1.show-info .img-container img {
+      filter: blur(8px); /* Apply a blur effect when show-info class is present */
     }
     
     .project-1 .project-name {
@@ -75,23 +89,61 @@
       color: white;
       z-index: 999;
       text-align: center;
+      transition: opacity 0.5s ease-in-out; /* Add ease-in-out transition for opacity */
+    }
+    
+    .project-1:hover .project-name {
+      opacity: 0.8; /* Reduce opacity on hover */
     }
     
     .project-1 .project-name p {
       color: #fff;
       font-size: 3rem;
+     // opacity: 1;
+      transition: opacity 0.5s ease-in-out; /* Add ease-in-out transition for opacity */
+    }
+    
+    .project-1.show-info .project-name p {
+      //opacity: 0;
     }
     
     .project-1 .project-name .project-info {
-      display: none; /* Initially hide the project info */
+      display: none;
       font-size: 1.5rem;
       margin-top: 10px;
-      transition: opacity 0.5s; /* Add a smooth transition effect */
+     // opacity: 0;
+      //transition: opacity 0.5s ease-in-out; /* Add ease-in-out transition for opacity */
     }
     
     .project-1.show-info .project-name .project-info {
-      display: block; /* Show the project info when the show-info class is present */
+      display: block;
+      opacity: 1;
     }
+    
+    .project-1 .project-name .more-info-button {
+      display: none;
+      background-color: #4CAF50; /* Green background color */
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s; /* Add a smooth background color transition effect */
+    }
+    
+    .project-1.show-info .project-name .more-info-button {
+      display: inline-block;
+    }
+    
+    .project-1 .project-name .more-info-button:hover {
+      background-color: #45a049; /* Darker green on hover */
+    }
+    
+    
     
     
   
