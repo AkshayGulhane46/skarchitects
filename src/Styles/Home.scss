@@ -48,100 +48,61 @@
     justify-content: center;
 
   .projects{
-
     .project-1 {
-      position: relative;
       padding: 10px;
-      height: 80vh;
+      height: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin-top: 15px;
-      cursor: pointer; /* Add pointer cursor to indicate clickable */
-      transition: background-color 0.3s; /* Add transition for background-color */
     }
     
-    .project-1:hover {
-      filter: blur(8px); /* Apply a blur effect on hover */
-    }
-    
-    .project-1 .img-container {
+    .img-container {
       position: relative;
+      cursor: pointer;
     }
     
-    .project-1 .img-container img {
-      height: 80vh;
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+    }
+    
+    .project-name p {
+      font-size: 3rem;
+      margin: 0;
+    }
+    
+    .project-details p,
+    .project-button button {
+      font-size: 1.5rem;
+      margin: 10px 0;
+      opacity: 0; /* Initial opacity set to 0 */
+      transition: opacity 0.5s ease; /* Add a transition for smooth effect */
+    }
+    
+    .img-container img {
+      height: 75vh;
       object-fit: cover;
       width: 90vw;
       border-radius: 10px;
-      transition: filter 0.5s; /* Add a smooth transition for the filter property */
+      transition: filter 0.5s ease;
     }
     
-    .project-1.show-info .img-container img {
-      filter: blur(8px); /* Apply a blur effect when show-info class is present */
+    .blur .img-container img {
+      filter: blur(5px);
     }
     
-    .project-1 .project-name {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      color: white;
-      z-index: 999;
-      text-align: center;
-      transition: opacity 0.5s ease-in-out; /* Add ease-in-out transition for opacity */
+    .blur .project-details p,
+    .blur .project-button button {
+      opacity: 1; /* Show details and button when blurred by changing opacity */
     }
     
-    .project-1:hover .project-name {
-      opacity: 0.8; /* Reduce opacity on hover */
-    }
+
     
-    .project-1 .project-name p {
-      color: #fff;
-      font-size: 3rem;
-     // opacity: 1;
-      transition: opacity 0.5s ease-in-out; /* Add ease-in-out transition for opacity */
-    }
-    
-    .project-1.show-info .project-name p {
-      //opacity: 0;
-    }
-    
-    .project-1 .project-name .project-info {
-      display: none;
-      font-size: 1.5rem;
-      margin-top: 10px;
-     // opacity: 0;
-      //transition: opacity 0.5s ease-in-out; /* Add ease-in-out transition for opacity */
-    }
-    
-    .project-1.show-info .project-name .project-info {
-      display: block;
-      opacity: 1;
-    }
-    
-    .project-1 .project-name .more-info-button {
-      display: none;
-      background-color: #4CAF50; /* Green background color */
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin-top: 10px;
-      cursor: pointer;
-      transition: background-color 0.3s; /* Add a smooth background color transition effect */
-    }
-    
-    .project-1.show-info .project-name .more-info-button {
-      display: inline-block;
-    }
-    
-    .project-1 .project-name .more-info-button:hover {
-      background-color: #45a049; /* Darker green on hover */
-    }
     
     
     
