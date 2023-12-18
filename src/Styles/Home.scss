@@ -1,149 +1,60 @@
-  /* Media Query for Mobile Devices */ 
-@media (max-width: 480px) { 
+/* General styles for all screen sizes */
 
-  .top{
-    padding: 10px;
-    height: 80vh;
-   // background-color: #3e8bc5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  /* Styles for mobile devices */
+  body {
+    font-size: 14px;
   }
-  .top h1{
-    position: absolute;
-    top: 11%;
-    left: 30%;
-    transform: translate(-80%, -25%);
-    text-align: center;
-    color: #cfa084;  // Set the desired text color
-    font-size: 2rem;
-   
+  .top {
+    /* Adjust styles for the 'top' section in mobile view */
+  }
+  .img-container img {
+    /* Adjust styles for images in mobile view */
+    width: 100%;
+  }
 }
-  .top p{
-      position: absolute;
-      top: 20%;
-      left: 45%;
-      transform: translate(-50%, -25%);
-      text-align: left;
-      color: #fff;  // Set the desired text color
-      font-size: 3rem;
-     
+
+/* Media Query for low-resolution Tablets, iPads */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Styles for tablets and iPads in landscape mode */
+  body {
+    font-size: 16px;
   }
-
-
-  .top img{
-    height: 75vh;
-    object-fit:cover;
-    width: 90vw;
-    border-radius: 10px;
+  .top {
+    /* Adjust styles for the 'top' section in tablet landscape view */
   }
+}
 
-
-  .middle{
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-  .projects{
-    .project-1 {
-      padding: 10px;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .img-container {
-      position: relative;
-      cursor: pointer;
-    }
-    
-    .overlay-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      color: #fff;
-    }
-    
-    .project-name p {
-      font-size: 3rem;
-      margin: 0;
-    }
-    
-    .project-details p,
-    .project-button button {
-      font-size: 1.5rem;
-      margin: 10px 0;
-      opacity: 0; /* Initial opacity set to 0 */
-      transition: opacity 0.5s ease; /* Add a transition for smooth effect */
-    }
-    
-    .img-container img {
-      height: 75vh;
-      object-fit: cover;
-      width: 90vw;
-      border-radius: 10px;
-      transition: filter 0.5s ease;
-    }
-    
-    .blur .img-container img {
-      filter: blur(5px);
-    }
-    
-    .blur .project-details p,
-    .blur .project-button button {
-      opacity: 1; /* Show details and button when blurred by changing opacity */
-    }
-    
-
-    
-    
-    
-    
-    
-  
-      
-    .project-2{
-      height: 95vh;
-      border: 1px solid black;
-       p{
-        font-size: 3rem
-      }
-    }
-    .project-3{
-      height: 95vh;
-      border: 1px solid black;
-       p{
-        font-size: 3rem
-      }
-    }
+/* Media Query for Tablets iPads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for tablets and iPads in portrait mode */
+  body {
+    font-size: 18px;
   }
+  .top {
+    /* Adjust styles for the 'top' section in tablet portrait view */
   }
+}
 
-} 
-  
-/* Media Query for low resolution  Tablets, Ipads */ 
-@media (min-width: 481px) and (max-width: 767px) { 
-   
-} 
-  
-/* Media Query for Tablets Ipads portrait mode */ 
-@media (min-width: 768px) and (max-width: 1024px){ 
- 
-} 
-  
-/* Media Query for Laptops and Desktops */ 
-@media (min-width: 1025px) and (max-width: 1280px){ 
-   
-} 
-  
-/* Media Query for Large screens */ 
-@media (min-width: 1281px) { 
-  
-} 
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* Styles for laptops and desktops */
+  body {
+    font-size: 20px;
+  }
+  .top {
+    /* Adjust styles for the 'top' section in desktop view */
+  }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+  /* Styles for large screens */
+  body {
+    font-size: 22px;
+  }
+  .top {
+    /* Adjust styles for the 'top' section in large screen view */
+  }
+}
